@@ -49,6 +49,6 @@ h1 {
 .card {
   width: 220px;
   height: 310px;
-  background-image: url("st-001.jpg");
+  border-radius: 10px;
   background-size: cover;
 }
