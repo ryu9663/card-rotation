@@ -1,3 +1,5 @@
+const isLive = window.location.pathname.includes("card-rotation");
+console.log(isLive);
 const IMAGES = [
   "st-001.jpg",
   "st-002.jpg",
@@ -23,7 +25,9 @@ IMAGES.forEach((image) => {
   const card = document.createElement("div");
   card.classList.add("card");
 
-  card.style.backgroundImage = `url(/assets/cards/${image})`;
+  card.style.backgroundImage = `url(${
+    isLive ? "/card-rotation" : ""
+  }/assets/cards/${image})`;
 
   // Append overlay and card to the container
   container.appendChild(overlay);
