@@ -51,7 +51,7 @@ containers.forEach((container, i) => {
   });
 
   container.addEventListener("mouseout", function () {
-    overlay.style = "filter : opacity(0)";
+    overlay.style = "background-position : 100%";
     container.style =
       "transform : perspective(350px) rotateY(0deg) rotateX(0deg)";
   });
