@@ -1,0 +1,45 @@
+.wrapper {
+  margin-left: 30px;
+  display: flex;
+  gap: 30px;
+}
+
+h1 {
+  margin-left: 30px;
+  font-style: oblique;
+  font-weight: 200;
+}
+
+.container {
+  width: 220px;
+  height: 310px;
+  transition: all 0.1s;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 220px;
+  height: 310px;
+  background: linear-gradient(
+    105deg,
+    transparent 40%,
+    rgba(161, 255, 211, 0.8) 45%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(118, 108, 255, 0.6) 55%,
+    transparent 60%
+  );
+  filter: brightness(1.1) opacity(0.8);
+  mix-blend-mode: hard-light;
+
+  background-size: 150% 150%;
+  background-position: 100%;
+  transition: all 0.1s;
+}
+
+.card {
+  width: 220px;
+  height: 310px;
+  background-image: url("st-001.jpg");
+  background-size: cover;
+}
