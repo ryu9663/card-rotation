@@ -1,7 +1,3 @@
-const isLive = "https://ryu9663.github.io/card-rotation/".includes(
-  "card-rotation"
-);
-console.log(isLive);
 const IMAGES = [
   "st-001.jpg",
   "st-002.jpg",
