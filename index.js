@@ -5,6 +5,7 @@ const IMAGES = [
   "st-059.jpg",
   "st-166.jpg",
   "bo-080.jpg",
+  "digimon-background.jpeg",
 ];
 
 const wrapper = document.querySelector(".wrapper");
@@ -22,7 +23,7 @@ IMAGES.forEach((image) => {
   const card = document.createElement("div");
   card.classList.add("card");
 
-  card.style.backgroundImage = `url(${image})`;
+  card.style.backgroundImage = `url(/assets/cards/${image})`;
 
   // Append overlay and card to the container
   container.appendChild(overlay);

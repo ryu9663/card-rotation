@@ -1,6 +1,15 @@
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(14, 214, 0) 0%,
+    blue 50%,
+    rgb(255, 230, 0) 100%
+  );
+}
 .wrapper {
   margin-left: 30px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
 
